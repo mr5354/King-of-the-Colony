@@ -10,11 +10,12 @@ public class MinigamEntry : MonoBehaviour
     public string sceneToLoad;
     public GameObject highlight;
     private float distance;
-    private static bool active = false;
+    private bool active = false;
+    public string name;
 
     void Update() {
         distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-        if (distance <= showHighlightDistance && active) {
+        if (active == true && distance <= showHighlightDistance) {
             highlight.SetActive(true);
         } else {
             highlight.SetActive(false);
@@ -25,14 +26,16 @@ public class MinigamEntry : MonoBehaviour
     public void OnMouseDown() {
         Debug.Log("Distance is: " + distance);
         Debug.Log("Interaction Distance is: " + interactionDistance);
-        if (active && distance <= interactionDistance) {
+        if (active == true && distance <= interactionDistance) {
             SceneManager.LoadScene(sceneToLoad);
         }
     }
 
     public void activate(bool b) {
         active = b;
-        Debug.Log("Minigame activated");
     }
-
+    
+    public string getName() {
+        return name;
+    }
 }

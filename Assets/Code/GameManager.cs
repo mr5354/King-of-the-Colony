@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
             if (minigameArray[i]) {
                 // activate minigame
                 minigames[i].activate(true);
+                Debug.Log("Minigame activated: " + minigames[i].getName());
                 count++;
             } else {
                 minigames[i].activate(false);
@@ -81,7 +82,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("# of minigame activated: " + count);
         // if no minigames are activated, activate at least one
         if (count == 0) {
-            Debug.Log("Activating one minigame");
             int minigameToActivate = Random.Range(0, 5);
             minigames[minigameToActivate].activate(true);
         }
