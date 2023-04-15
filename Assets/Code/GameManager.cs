@@ -16,13 +16,13 @@ public class GameManager : MonoBehaviour
     public string sceneToLoad;
 
     // minigames
-    public MinigamEntry chewWireGame;
-    public MinigamEntry garbageCollectionGame;
-    public MinigamEntry fakeInfoGame;
-    public MinigamEntry minigame4;
-    public MinigamEntry minigame5;
+    public MinigameEntry chewWireGame;
+    public MinigameEntry garbageCollectionGame;
+    public MinigameEntry fakeInfoGame;
+    public MinigameEntry minigame4;
+    public MinigameEntry minigame5;
     
-    private MinigamEntry[] minigames;
+    private MinigameEntry[] minigames;
 
     private static bool activated = false;
 
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         TimerOn = true;
 
         // minigames
-        minigames = new MinigamEntry[] {chewWireGame, garbageCollectionGame, fakeInfoGame, minigame4, minigame5};
+        minigames = new MinigameEntry[] {chewWireGame, garbageCollectionGame, fakeInfoGame, minigame4, minigame5};
 
     }
 

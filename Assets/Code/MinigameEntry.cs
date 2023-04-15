@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MinigamEntry : MonoBehaviour
+public class MinigameEntry : MonoBehaviour
 {
     public float interactionDistance;
     private float showHighlightDistance = 11f;
     public string sceneToLoad;
     public GameObject highlight;
     private float distance;
-    private bool active = false;
+    public bool active = false;
     public string name;
+    public GameObject UIHighlight;
 
     void Update() {
         distance = Vector3.Distance(transform.position, Camera.main.transform.position);
@@ -33,9 +34,14 @@ public class MinigamEntry : MonoBehaviour
 
     public void activate(bool b) {
         active = b;
+        UIHighlight.SetActive(b);
     }
     
     public string getName() {
         return name;
+    }
+
+    public bool isActive() {
+        return active;
     }
 }
