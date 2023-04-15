@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
 
     private static bool activated = false;
 
+    // sound
+    public AudioSource click;
+
     void Start()
     {
         // Find the HappinessBar object in the scene and get a reference to it
@@ -60,6 +63,15 @@ public class GameManager : MonoBehaviour
                 activated = false;
             }
         }
+        if(Input.GetMouseButtonDown(0)){
+            click.Play();
+        }
+    }
+
+    void Awake()
+    {
+        //Let the gameobject persist over the scenes
+        DontDestroyOnLoad(gameObject);
     }
 
     // every minute, a random number of minigames will be activated. if none are activated, at least one will be

@@ -13,6 +13,7 @@ public class MinigameEntry : MonoBehaviour
     public bool active = false;
     public string name;
     public GameObject UIHighlight;
+    // public AudioSource click;
 
     void Update() {
         distance = Vector3.Distance(transform.position, Camera.main.transform.position);
@@ -25,6 +26,7 @@ public class MinigameEntry : MonoBehaviour
 
     // when the player is within 80 units of the minigame entry and the object is clicked, the minigame will start
     public void OnMouseDown() {
+        // click.Play();
         Debug.Log("Distance is: " + distance);
         Debug.Log("Interaction Distance is: " + interactionDistance);
         if (active == true && distance <= interactionDistance) {
