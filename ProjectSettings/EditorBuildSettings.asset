@@ -11,4 +11,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/GarbageMiniGame.unity
+    guid: bd9909a75b6ba45809352f70362d7d8e
+  - enabled: 1
+    path: Assets/Scenes/ChewWireMiniGame.unity
+    guid: a9edbaeb4fd434ab58b5cac9ab787a28
+  - enabled: 1
+    path: Assets/Scenes/FakeInfoMiniGame.unity
+    guid: c513587d14baa43b1b92d9d88298d3d5
+  - enabled: 1
+    path: Assets/Scenes/MiniGame_4.unity
+    guid: a2b6143a9cc4842dca17306a866d64d0
+  - enabled: 1
+    path: Assets/Scenes/MiniGame_5.unity
+    guid: 9830e62ecca514290a85fc91e6a72204
   m_configObjects: {}
