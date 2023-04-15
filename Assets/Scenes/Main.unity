@@ -241,6 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionDistance: 10.15
   sceneToLoad: MiniGame_4
+  highlight: {fileID: 1658352772}
 --- !u!50 &172401135
 Rigidbody2D:
   serializedVersion: 4
@@ -2035,6 +2036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionDistance: 10.23
   sceneToLoad: MiniGame_5
+  highlight: {fileID: 1360149270}
 --- !u!50 &735726265
 Rigidbody2D:
   serializedVersion: 4
@@ -5911,6 +5913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionDistance: 10.06
   sceneToLoad: ChewWireMiniGame
+  highlight: {fileID: 1055519316}
 --- !u!50 &814924123
 Rigidbody2D:
   serializedVersion: 4
@@ -6082,6 +6085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionDistance: 10.07
   sceneToLoad: GarbageMiniGame
+  highlight: {fileID: 0}
 --- !u!1 &958694874
 GameObject:
   m_ObjectHideFlags: 0
@@ -6176,7 +6180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1055519317}
   m_Layer: 0
-  m_Name: ChewWireMinigame_Highlight_Effect_Group
+  m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6496,6 +6500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionDistance: 10.07
   sceneToLoad: GarbageMiniGame
+  highlight: {fileID: 1988983886}
 --- !u!4 &1123357478
 Transform:
   m_ObjectHideFlags: 0
@@ -6606,7 +6611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1169572175}
   m_Layer: 0
-  m_Name: FakeInfoHighlight
+  m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9960,6 +9965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionDistance: 10.13
   sceneToLoad: FakeInfoMiniGame
+  highlight: {fileID: 1169572174}
 --- !u!50 &1359316891
 Rigidbody2D:
   serializedVersion: 4
@@ -10111,7 +10117,7 @@ GameObject:
   - component: {fileID: 1360149271}
   - component: {fileID: 1360149272}
   m_Layer: 0
-  m_Name: Minigame_5_Highlights
+  m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10283,6 +10289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionDistance: 10.07
   sceneToLoad: GarbageMiniGame
+  highlight: {fileID: 0}
 --- !u!1 &1465537677
 GameObject:
   m_ObjectHideFlags: 0
@@ -10630,7 +10637,7 @@ GameObject:
   - component: {fileID: 1658352773}
   - component: {fileID: 1658352774}
   m_Layer: 0
-  m_Name: Minigame_4_Highlight
+  m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10833,11 +10840,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 203302809}
   sceneToLoad: End
-  chewWireGame: {fileID: 814924119}
-  garbageCollectionGame: {fileID: 1123357473}
-  fakeInfoGame: {fileID: 1359316889}
-  minigame4: {fileID: 172401133}
-  minigame5: {fileID: 735726263}
 --- !u!1 &1908915440
 GameObject:
   m_ObjectHideFlags: 0
@@ -10932,7 +10934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1988983887}
   m_Layer: 0
-  m_Name: GarbageCollection_Highlight_Effect_Group
+  m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

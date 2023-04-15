@@ -16,13 +16,13 @@ public class GameManager : MonoBehaviour
     public string sceneToLoad;
 
     // minigames
-    public static GameObject chewWireGame;
-    public static GameObject garbageCollectionGame;
-    public static GameObject fakeInfoGame;
-    public static GameObject minigame4;
-    public static GameObject minigame5;
+    public MinigamEntry chewWireGame;
+    public MinigamEntry garbageCollectionGame;
+    public MinigamEntry fakeInfoGame;
+    public MinigamEntry minigame4;
+    public MinigamEntry minigame5;
     
-    private static GameObject[] minigames = {chewWireGame, garbageCollectionGame, fakeInfoGame, minigame4, minigame5};
+    private MinigamEntry[] minigames;
 
     private static bool activated = false;
 
@@ -35,6 +35,9 @@ public class GameManager : MonoBehaviour
         bar.SetMaxHappiness(happiness);
 
         TimerOn = true;
+
+        // minigames
+        minigames = new MinigamEntry[] {chewWireGame, garbageCollectionGame, fakeInfoGame, minigame4, minigame5};
 
     }
 
@@ -49,8 +52,6 @@ public class GameManager : MonoBehaviour
                 TimerOn = false;
                 SceneManager.LoadScene(sceneToLoad);
             }
-
-            // Debug.Log("can i activate: " + !activated);
 
             if ((int)countdownTime % 10 == 0 && countdownTime > 0 && !activated) {
                 MinigameActivator();
@@ -71,14 +72,18 @@ public class GameManager : MonoBehaviour
             minigameArray[i] = Random.value < 0.5f;
             if (minigameArray[i]) {
                 // activate minigame
+                minigames[i].activate(true);
                 count++;
+            } else {
+                minigames[i].activate(false);
             }
         }
         Debug.Log("# of minigame activated: " + count);
         // if no minigames are activated, activate at least one
         if (count == 0) {
-            minigameArray[Random.Range(0, 5)] = true;
-            // activate this minigame
+            Debug.Log("Activating one minigame");
+            int minigameToActivate = Random.Range(0, 5);
+            minigames[minigameToActivate].activate(true);
         }
 
     }
