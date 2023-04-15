@@ -10833,6 +10833,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 203302809}
   sceneToLoad: End
+  chewWireGame: {fileID: 814924119}
+  garbageCollectionGame: {fileID: 1123357473}
+  fakeInfoGame: {fileID: 1359316889}
+  minigame4: {fileID: 172401133}
+  minigame5: {fileID: 735726263}
 --- !u!1 &1908915440
 GameObject:
   m_ObjectHideFlags: 0
