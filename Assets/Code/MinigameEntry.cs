@@ -13,6 +13,7 @@ public class MinigameEntry : MonoBehaviour
     public bool active = false;
     public string name;
     public GameObject UIHighlight;
+    public GameObject Player;
     // public AudioSource click;
 
     void Update() {
@@ -30,7 +31,9 @@ public class MinigameEntry : MonoBehaviour
         Debug.Log("Distance is: " + distance);
         Debug.Log("Interaction Distance is: " + interactionDistance);
         if (active == true && distance <= interactionDistance) {
-            SceneManager.LoadScene(sceneToLoad);
+           // SceneManager.LoadScene(sceneToLoad);
+            SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Additive);
+            Player.SetActive(false);
         }
     }
 

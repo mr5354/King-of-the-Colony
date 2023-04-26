@@ -596,6 +596,7 @@ MonoBehaviour:
   active: 0
   name: 4
   UIHighlight: {fileID: 49443302}
+  Player: {fileID: 383932788}
 --- !u!50 &172401135
 Rigidbody2D:
   serializedVersion: 4
@@ -907,7 +908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: 175}
+  m_AnchoredPosition: {x: 120, y: 148.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &312267072
@@ -1859,7 +1860,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -124.80002, y: 175}
+  m_AnchoredPosition: {x: -124.80002, y: 150.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &447443714
@@ -1997,6 +1998,7 @@ MonoBehaviour:
   active: 0
   name: trash
   UIHighlight: {fileID: 1012982843}
+  Player: {fileID: 383932788}
 --- !u!50 &488182959
 Rigidbody2D:
   serializedVersion: 4
@@ -2958,6 +2960,7 @@ MonoBehaviour:
   active: 0
   name: 5
   UIHighlight: {fileID: 1165836624}
+  Player: {fileID: 383932788}
 --- !u!50 &735726265
 Rigidbody2D:
   serializedVersion: 4
@@ -6838,6 +6841,7 @@ MonoBehaviour:
   active: 0
   name: chew
   UIHighlight: {fileID: 330843430}
+  Player: {fileID: 383932788}
 --- !u!50 &814924123
 Rigidbody2D:
   serializedVersion: 4
@@ -10974,6 +10978,7 @@ MonoBehaviour:
   active: 0
   name: info
   UIHighlight: {fileID: 93981908}
+  Player: {fileID: 383932788}
 --- !u!50 &1359316891
 Rigidbody2D:
   serializedVersion: 4
