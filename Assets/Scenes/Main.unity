@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 172401135}
   - component: {fileID: 172401134}
   m_Layer: 0
-  m_Name: MiniGame_4
+  m_Name: 4 - Fridge to Garbage
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1264,7 +1264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383932788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.496, y: 1.88, z: 0}
+  m_LocalPosition: {x: 0.44, y: 2.39, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1974,7 +1974,7 @@ GameObject:
   - component: {fileID: 488182959}
   - component: {fileID: 488182958}
   m_Layer: 0
-  m_Name: GarbageCollector
+  m_Name: 2 - GarbageCollector
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2936,7 +2936,7 @@ GameObject:
   - component: {fileID: 735726265}
   - component: {fileID: 735726264}
   m_Layer: 0
-  m_Name: MiniGame_5
+  m_Name: 5 - Rat Poison
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6749,7 +6749,7 @@ GameObject:
   - component: {fileID: 814924123}
   - component: {fileID: 814924122}
   m_Layer: 0
-  m_Name: ChewWireMinigame
+  m_Name: 1 - ChewWireMinigame
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10954,7 +10954,7 @@ GameObject:
   - component: {fileID: 1359316891}
   - component: {fileID: 1359316890}
   m_Layer: 0
-  m_Name: FakeInfoMiniGame
+  m_Name: 3 - FakeInfoMiniGame
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
