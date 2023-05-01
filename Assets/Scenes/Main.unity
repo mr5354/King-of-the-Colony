@@ -330,7 +330,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.53000003, y: 0.5}
-  m_AnchoredPosition: {x: -0.9, y: 0.50001}
+  m_AnchoredPosition: {x: -0.9999991, y: 0.5}
   m_SizeDelta: {x: -2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &93981910
@@ -411,7 +411,7 @@ RectTransform:
   m_GameObject: {fileID: 118547316}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -3794.7454}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 9.625, y: 9.625, z: 9.625}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1671565826}
@@ -419,7 +419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.53000003, y: 0.5}
-  m_AnchoredPosition: {x: -1.1, y: 24.1}
+  m_AnchoredPosition: {x: -1.05, y: 24.1}
   m_SizeDelta: {x: -2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &118547319
@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7839513d3840c41bf9c867e6d1fc8f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 10.15
+  interactionDistance: 10.16
   sceneToLoad: MiniGame_4
   highlight: {fileID: 1658352772}
   active: 0
@@ -1992,7 +1992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7839513d3840c41bf9c867e6d1fc8f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 10.06
+  interactionDistance: 10.07
   sceneToLoad: GarbageMiniGame
   highlight: {fileID: 171521989}
   active: 0
@@ -2632,7 +2632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 387.6, y: 124.34}
+  m_AnchoredPosition: {x: 387.6, y: 100.9}
   m_SizeDelta: {x: 100, y: 113.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &641350885
@@ -2954,7 +2954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7839513d3840c41bf9c867e6d1fc8f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 10.23
+  interactionDistance: 10.24
   sceneToLoad: MiniGame_5
   highlight: {fileID: 1360149270}
   active: 0
@@ -6835,7 +6835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7839513d3840c41bf9c867e6d1fc8f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 10.06
+  interactionDistance: 10.07
   sceneToLoad: ChewWireMiniGame
   highlight: {fileID: 1055519316}
   active: 0
@@ -7024,7 +7024,7 @@ RectTransform:
   m_GameObject: {fileID: 971745200}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -3794.7454}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 9.625, y: 9.625, z: 9.625}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1671565826}
@@ -7032,8 +7032,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.53000003, y: 0.5}
-  m_AnchoredPosition: {x: -0.8, y: -45.6}
-  m_SizeDelta: {x: -2, y: 1}
+  m_AnchoredPosition: {x: -0.8, y: -45.4}
+  m_SizeDelta: {x: -2.03, y: 0.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &971745203
 SpriteRenderer:
@@ -10972,7 +10972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7839513d3840c41bf9c867e6d1fc8f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 10.13
+  interactionDistance: 10.14
   sceneToLoad: FakeInfoMiniGame
   highlight: {fileID: 1169572174}
   active: 0
