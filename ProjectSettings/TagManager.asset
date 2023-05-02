@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Interactable
+  - TrashSprite
   layers:
   - Default
   - TransparentFX

@@ -34,6 +34,9 @@ public class MinigameEntry : MonoBehaviour
            // SceneManager.LoadScene(sceneToLoad);
             SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Additive);
             Player.SetActive(false);
+            // hide the UI
+            GameObject.Find("Canvas").SetActive(false);
+            // pause the timer in game manager
         }
     }
 
