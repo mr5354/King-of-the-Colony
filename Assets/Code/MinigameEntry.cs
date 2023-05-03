@@ -44,6 +44,7 @@ public class MinigameEntry : MonoBehaviour
                 {
                     gameManager.LoadMinigame(minigameIndex);
                 }
+                gameManager.deactivateMiniGame(minigameIndex);
             }
         }
     }

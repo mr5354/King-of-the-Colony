@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI timerText;
     public string sceneToLoad;
     private string currentMinigameScene;
+    // private int toSkip = null;
+    public GameObject canvas;
 
     // minigames
     public MinigameEntry chewWireGame;
@@ -47,17 +49,27 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        LoadMinigameWithDebugKeys();
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            // Unload the current minigame scene if one is loaded
-            UnloadCurrentMinigame();
-        }
+        // ==============Debug helpers==============
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            // Decrement happiness by 5
-            UpdateHappiness(5);
+        // LoadMinigameWithDebugKeys();
+        // if (Input.GetKeyDown(KeyCode.Escape))
+        // {
+        //     // Unload the current minigame scene if one is loaded
+        //     UnloadCurrentMinigame();
+        // }
+
+        // if (Input.GetKeyDown(KeyCode.P))
+        // {
+        //     // Decrement happiness by 5
+        //     UpdateHappiness(5);
+        // }
+
+        // ==============Debug helpers end==============
+
+        if (happiness == 0) {
+            TimerOn = false;
+            SceneManager.LoadScene(sceneToLoad);
+            activated = false;
         }
 
         if (TimerOn)
@@ -68,9 +80,10 @@ public class GameManager : MonoBehaviour
             {
                 TimerOn = false;
                 SceneManager.LoadScene(sceneToLoad);
+                activated = false;
             }
 
-            if ((int)countdownTime % 10 == 0 && countdownTime > 0 && !activated) {
+            if ((countdownTime == 5f * 60f) || ((int)countdownTime % 10 == 0 && countdownTime > 0 && !activated)) {
                 MinigameActivator();
                 activated = true;
             } else if ((int)countdownTime % 10 != 0) {
@@ -115,7 +128,11 @@ public class GameManager : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(time / 60f);
         int seconds = Mathf.FloorToInt(time % 60f);
-        return string.Format("{0:00}:{1:00}", minutes, seconds);
+        if (minutes >= 0 && seconds >= 0) {
+            return string.Format("{0:00}:{1:00}", minutes, seconds);
+        } else {
+            return "00:00";
+        }
     }
 
     // Whenever a minigame ends, the happiness will be updated
@@ -157,7 +174,8 @@ public class GameManager : MonoBehaviour
             // Deactivate the player (if needed)
             minigames[index].Player.SetActive(false);
             // Hide the UI (if needed)
-            GameObject.Find("Canvas").SetActive(false);
+            // GameObject.Find("Canvas").SetActive(false);
+            canvas.SetActive(false);
             // Pause the timer in the game manager (if needed)
             TimerOn = false;
         }
@@ -179,7 +197,8 @@ public class GameManager : MonoBehaviour
             // Reactivate the player (if needed)
             minigames[0].Player.SetActive(true); // Assuming all minigames use the same player reference
             // Show the UI (if needed)
-            GameObject.Find("Canvas").SetActive(true);
+            // GameObject.Find("Canvas").SetActive(true);
+            canvas.SetActive(true);
             // Resume the timer in the game manager (if needed)
             TimerOn = true;
         }
@@ -191,7 +210,7 @@ public class GameManager : MonoBehaviour
         // Reactivate the player (if needed)
         minigames[0].Player.SetActive(true); // Assuming all minigames use the same player reference
         // Show the UI (if needed)
-        GameObject.Find("Canvas").SetActive(true);
+        canvas.SetActive(true);
         // Resume the timer in the game manager (if needed)
         TimerOn = true;
     }
@@ -206,5 +225,13 @@ public class GameManager : MonoBehaviour
             }
         }
         return -1; // Return -1 if the scene name is not found
+    }
+
+    public int getHappiness() {
+        return happiness;
+    }
+
+    public void deactivateMiniGame(int idx) {
+        minigames[idx].activate(false);
     }
 }
