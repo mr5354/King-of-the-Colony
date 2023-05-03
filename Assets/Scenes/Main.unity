@@ -2427,13 +2427,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<-Destroy Wires
+  m_text: '<- Destroy Wires
 
 
-    <-Garbage Collect
+    <- Collect Garbage
 
 
-    ->Spread Fake News
+    -> Spread Fake News
 
 
     ->Task
@@ -7343,7 +7343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -333, y: -194.7}
+  m_AnchoredPosition: {x: -333, y: -269.9}
   m_SizeDelta: {x: 116.63, y: 18.11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1076235620
