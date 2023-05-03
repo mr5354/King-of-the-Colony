@@ -146,7 +146,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void LoadMinigame(int index)
+    public void LoadMinigame(int index)
     {
         if (index >= 0 && index < minigames.Length)
         {
@@ -165,13 +165,18 @@ public class GameManager : MonoBehaviour
             TimerOn = false;
         }
     }
-
+    
     private void UnloadCurrentMinigame()
     {
         // Unload the current minigame scene if one is loaded
         if (!string.IsNullOrEmpty(currentMinigameScene))
         {
-            SceneManager.UnloadSceneAsync(currentMinigameScene);
+            // Check if the scene is loaded before attempting to unload it
+            Scene sceneToUnload = SceneManager.GetSceneByName(currentMinigameScene);
+            if (sceneToUnload.isLoaded)
+            {
+                SceneManager.UnloadSceneAsync(currentMinigameScene);
+            }
             currentMinigameScene = null;
 
             // Reactivate the player (if needed)
@@ -183,6 +188,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
     public void ReactivatePlayerAndUI()
     {
         // Reactivate the player (if needed)
@@ -191,5 +197,17 @@ public class GameManager : MonoBehaviour
         GameObject.Find("Canvas").SetActive(true);
         // Resume the timer in the game manager (if needed)
         TimerOn = true;
+    }
+
+    public int GetMinigameIndex(string sceneName)
+    {
+        for (int i = 0; i < minigames.Length; i++)
+        {
+            if (minigames[i].sceneToLoad == sceneName)
+            {
+                return i;
+            }
+        }
+        return -1; // Return -1 if the scene name is not found
     }
 }

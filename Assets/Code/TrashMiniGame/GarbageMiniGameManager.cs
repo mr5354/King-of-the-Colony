@@ -39,6 +39,7 @@ public class GarbageMiniGameManager : MonoBehaviour
             // Update the timer
             remainingTime -= Time.deltaTime;
             UpdateTimerText();
+            UpdateScoreText();
 
             // Check if the timer has reached zero
             if (remainingTime <= 0f)
@@ -128,6 +129,15 @@ public class GarbageMiniGameManager : MonoBehaviour
             {
                 gameManager.ReactivatePlayerAndUI();
             }
+        }
+    }
+
+    void OnDestroy()
+    {
+        // Destroy all spawned squares
+        if (garbageSpawner != null)
+        {
+            garbageSpawner.DestroyAllSquares();
         }
     }
 }

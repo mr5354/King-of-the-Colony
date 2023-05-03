@@ -14,8 +14,12 @@ public class MinigameEntry : MonoBehaviour
     public string name;
     public GameObject UIHighlight;
     public GameObject Player;
-    // public AudioSource click;
+    public GameManager gameManager; // Reference to the GameManager script
 
+    void Start() {
+
+    }
+    
     void Update() {
         distance = Vector3.Distance(transform.position, Camera.main.transform.position);
         if (active == true && distance <= showHighlightDistance) {
@@ -26,19 +30,24 @@ public class MinigameEntry : MonoBehaviour
     }
 
     // when the player is within 80 units of the minigame entry and the object is clicked, the minigame will start
-    public void OnMouseDown() {
-        // click.Play();
+    public void OnMouseDown()
+    {
         Debug.Log("Distance is: " + distance);
         Debug.Log("Interaction Distance is: " + interactionDistance);
-        if (active == true && distance <= interactionDistance) {
-           // SceneManager.LoadScene(sceneToLoad);
-            SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Additive);
-            Player.SetActive(false);
-            // hide the UI
-            GameObject.Find("Canvas").SetActive(false);
-            // pause the timer in game manager
+        if (active == true && distance <= interactionDistance)
+        {
+            // Use the GameManager reference to load the minigame scene
+            if (gameManager != null)
+            {
+                int minigameIndex = gameManager.GetMinigameIndex(sceneToLoad);
+                if (minigameIndex >= 0)
+                {
+                    gameManager.LoadMinigame(minigameIndex);
+                }
+            }
         }
     }
+
 
     public void activate(bool b) {
         active = b;
@@ -53,3 +62,4 @@ public class MinigameEntry : MonoBehaviour
         return active;
     }
 }
+ 
