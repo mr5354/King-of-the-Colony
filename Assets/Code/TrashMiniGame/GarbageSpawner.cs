@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class SpawnSprites : MonoBehaviour
+
+public class GarbageSpawner : MonoBehaviour
 {
     public GameObject spritePrefab; // the sprite prefab to spawn
     public GameObject boundaryObject; // the game object to use as the boundary for spawning sprites
+    
     public float spawnIntervalSeconds; // the time interval in seconds between sprite spawns
 
     private float spawnInterval; // the time interval between sprite spawns

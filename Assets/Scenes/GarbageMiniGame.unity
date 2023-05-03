@@ -516,7 +516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046304886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.12, y: 0.72, z: 0}
+  m_LocalPosition: {x: -5.51, y: 3.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 1162863177}
   - component: {fileID: 1162863176}
   m_Layer: 0
-  m_Name: GameEngineSpawner
+  m_Name: GarbageSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spritePrefab: {fileID: 8865984596000736247, guid: 88fa10e00ddde4873bb9804ff780fe7a, type: 3}
   boundaryObject: {fileID: 1528793264}
-  spawnIntervalSeconds: 1
+  spawnIntervalSeconds: 0.5
 --- !u!4 &1162863177
 Transform:
   m_ObjectHideFlags: 0

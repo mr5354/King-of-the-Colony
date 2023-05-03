@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     private bool TimerOn = false;
     public TextMeshProUGUI timerText;
     public string sceneToLoad;
+    private string currentMinigameScene;
+
 
     // minigames
     public MinigameEntry chewWireGame;
@@ -46,6 +48,13 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        LoadMinigameWithDebugKeys();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            // Unload the current minigame scene if one is loaded
+            UnloadCurrentMinigame();
+        }
+
         if (TimerOn)
         {
             countdownTime -= Time.deltaTime;
@@ -112,4 +121,55 @@ public class GameManager : MonoBehaviour
         happiness -= val;
         bar.SetHappiness(happiness);
     }
+
+    private void LoadMinigameWithDebugKeys()
+    {
+        // Check if the number keys 1-5 are pressed
+        for (int i = 0; i < minigames.Length; i++)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+            {
+                // Load the corresponding minigame
+                LoadMinigame(i);
+            }
+        }
+    }
+
+    private void LoadMinigame(int index)
+    {
+        if (index >= 0 && index < minigames.Length)
+        {
+            // Unload the current minigame scene if one is loaded
+            UnloadCurrentMinigame();
+
+            // Load the specified minigame additively
+            currentMinigameScene = minigames[index].sceneToLoad;
+            SceneManager.LoadScene(currentMinigameScene, LoadSceneMode.Additive);
+
+            // Deactivate the player (if needed)
+            minigames[index].Player.SetActive(false);
+            // Hide the UI (if needed)
+            GameObject.Find("Canvas").SetActive(false);
+            // Pause the timer in the game manager (if needed)
+            TimerOn = false;
+        }
+    }
+
+    private void UnloadCurrentMinigame()
+    {
+        // Unload the current minigame scene if one is loaded
+        if (!string.IsNullOrEmpty(currentMinigameScene))
+        {
+            SceneManager.UnloadSceneAsync(currentMinigameScene);
+            currentMinigameScene = null;
+
+            // Reactivate the player (if needed)
+            minigames[0].Player.SetActive(true); // Assuming all minigames use the same player reference
+            // Show the UI (if needed)
+            GameObject.Find("Canvas").SetActive(true);
+            // Resume the timer in the game manager (if needed)
+            TimerOn = true;
+        }
+    }
+
 }
