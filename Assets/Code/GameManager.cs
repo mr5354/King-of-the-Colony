@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     public string sceneToLoad;
     private string currentMinigameScene;
 
-
     // minigames
     public MinigameEntry chewWireGame;
     public MinigameEntry garbageCollectionGame;
@@ -53,6 +52,12 @@ public class GameManager : MonoBehaviour
         {
             // Unload the current minigame scene if one is loaded
             UnloadCurrentMinigame();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            // Decrement happiness by 5
+            UpdateHappiness(5);
         }
 
         if (TimerOn)
@@ -118,9 +123,15 @@ public class GameManager : MonoBehaviour
     // Whenever a minigame ends, the happiness will be updated
     public void UpdateHappiness(int val)
     {
+        // Debug log when this is called
+        Debug.Log("UpdateHappiness called with value: " + val);
         happiness -= val;
+        // Clamp the happiness value to ensure it doesn't go below 0
+        happiness = Mathf.Max(0, happiness);
+        // Update the health bar to reflect the new happiness value
         bar.SetHappiness(happiness);
     }
+
 
     private void LoadMinigameWithDebugKeys()
     {
@@ -172,4 +183,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ReactivatePlayerAndUI()
+    {
+        // Reactivate the player (if needed)
+        minigames[0].Player.SetActive(true); // Assuming all minigames use the same player reference
+        // Show the UI (if needed)
+        GameObject.Find("Canvas").SetActive(true);
+        // Resume the timer in the game manager (if needed)
+        TimerOn = true;
+    }
 }

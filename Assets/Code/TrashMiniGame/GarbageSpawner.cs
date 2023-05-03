@@ -18,6 +18,9 @@ public class GarbageSpawner : MonoBehaviour
     private float spriteWidth; // the width of the sprite prefab
     private float spriteHeight; // the height of the sprite prefab
 
+    private bool isSpawning = true; // Flag to control whether squares should be spawned
+    private List<GameObject> spawnedSquares = new List<GameObject>(); // List to keep track of spawned squares
+
     void Start()
     {
         // get the dimensions of the boundary object
@@ -40,22 +43,44 @@ public class GarbageSpawner : MonoBehaviour
 
     void Update()
     {
-        // increment the timer
-        timer += Time.deltaTime;
-
-        // check if it's time to spawn a new sprite
-        if (timer >= spawnInterval)
+        // Only spawn squares if isSpawning is true
+        if (isSpawning)
         {
-            // reset the timer
-            timer = 0f;
+            // increment the timer
+            timer += Time.deltaTime;
 
-            // generate a random position within the object boundary
-            float randomX = Random.Range(minX, maxX);
-            float randomY = Random.Range(minY, maxY);
-            Vector3 spawnPosition = new Vector3(randomX, randomY, 0f);
+            // check if it's time to spawn a new sprite
+            if (timer >= spawnInterval)
+            {
+                // reset the timer
+                timer = 0f;
 
-            // instantiate a new sprite prefab at the random position
-            Instantiate(spritePrefab, spawnPosition, Quaternion.identity);
+                // generate a random position within the object boundary
+                float randomX = Random.Range(minX, maxX);
+                float randomY = Random.Range(minY, maxY);
+                Vector3 spawnPosition = new Vector3(randomX, randomY, 0f);
+
+                // instantiate a new sprite prefab at the random position
+                GameObject newSquare = Instantiate(spritePrefab, spawnPosition, Quaternion.identity);
+                spawnedSquares.Add(newSquare); // Add the new square to the list
+            }
         }
     }
+
+        // Public method to toggle spawning
+    public void ToggleSpawning(bool shouldSpawn)
+    {
+        isSpawning = shouldSpawn;
+    }
+
+    // Public method to destroy all spawned squares
+    public void DestroyAllSquares()
+    {
+        foreach (GameObject square in spawnedSquares)
+        {
+            Destroy(square);
+        }
+        spawnedSquares.Clear();
+    }
 }
+

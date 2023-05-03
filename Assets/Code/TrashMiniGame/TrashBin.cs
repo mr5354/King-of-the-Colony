@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class TrashBin : MonoBehaviour
 {
+    // Reference to the GarbageMiniGameManager
+    public GarbageMiniGameManager miniGameManager;
+
     void OnTriggerEnter2D(Collider2D other) {
         // check if the other object has the "TrashSprite" tag
         if (other.CompareTag("TrashSprite"))
         {
             // destroy the other object
             Destroy(other.gameObject);
+
+            // increment the score in the mini game manager
+            miniGameManager.IncrementScore(1);
         }
     }
 
