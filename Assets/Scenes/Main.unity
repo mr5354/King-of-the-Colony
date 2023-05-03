@@ -2427,16 +2427,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<-Task 1
+  m_text: '<-Destroy Wires
 
 
-    <-Task 2
+    <-Garbage Collect
 
 
-    ->Task 3
+    ->Spread Fake News
 
 
-    ->Task 4
+    ->Task
+    4
 
 
     Task 5'

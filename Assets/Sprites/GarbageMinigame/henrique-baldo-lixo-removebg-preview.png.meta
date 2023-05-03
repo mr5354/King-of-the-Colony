@@ -1,0 +1,2016 @@
+fileFormatVersion: 2
+guid: 3d1bcd1f6e31749869bce2572727cf17
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 453
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e482b2b7a3eb4c8fb7e57961a6e641e
+      internalID: -132150289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 437
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf5ad159bc6a4047b1d21df3db6b4c7
+      internalID: -592857606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 453
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c72b33c0999d45b88dd8906c76a6502
+      internalID: 1708520266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 437
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b1d890322cf4e57b9edde03c54f2a0
+      internalID: -1069775900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 453
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d017b5cfcdc0640c9b11e96548088a65
+      internalID: 194236460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 437
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db1da49dcf234fb7bf29b2dbb5ce6ab
+      internalID: -203539264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 453
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9d089858fb54d0287915c135d092df
+      internalID: 41925773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 437
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9eac4923744842958be4474e0751d62
+      internalID: -1698752277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 375
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523fcf2e4eeea430dac2f51cd67d36ed
+      internalID: 691335825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 375
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfd3b52da69b4d2e85f7aacf596dc2f
+      internalID: 295025396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 394
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a45ed18f275243e98c8dfb98d6ecd6d
+      internalID: 1212898406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 394
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c81b92ed2a0429e846f065a5ee3234
+      internalID: -1857673796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 375
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6f4dc3b7a334a7d91fc755e0132c52
+      internalID: -163965933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 375
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d22cbda395544cc986a0769f231a257
+      internalID: 495260117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 394
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335404ee688794ea1b1ac884a8eae8e4
+      internalID: 278622966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 394
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253a8aaf8cacc452296b454b5ba7cad8
+      internalID: -9389699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 312
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccbe136bc46a4a52b60fd77004f099d
+      internalID: 1582712483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 316
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d689bc0297dc4e66b62ad4134dd7efe
+      internalID: 1265105877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 316
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59aa9fe7a9304b35a63519416b10025
+      internalID: -1644146376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 312
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32551576b151b4ba89aea8b5467ead3c
+      internalID: -1885577792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 312
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3e6d76d58f047fbbd24d92e98e6135
+      internalID: 403338498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 316
+        width: 61
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf3150a2148b42689e6ea48ebfcbc39
+      internalID: 1632895809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 312
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ea4fcbf1e684b79893485e5d4b0c94
+      internalID: 1361165404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 312
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1dfa9a9177442c9b124ab0fccb68e8
+      internalID: 2021778162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 277
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3563d00f9e9df44e5acde6e3e9bfeefa
+      internalID: -1427008999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 285
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4926c7340aa4b4642947c8b9d8a11eb5
+      internalID: 982147587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 254
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95ca92d1f6634afaa5db9795f6f8800
+      internalID: -2089467975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 250
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c6817421af84ffc9721b677b978e03
+      internalID: 1550053189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 250
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa157ef55e6b24e548332327e8d0dec0
+      internalID: -1723641524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 250
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2840ae0fa19843a194057086d749ae5
+      internalID: 666145550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 250
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fb478106f8844e58367636b944210b
+      internalID: -895229888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 254
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7898f3ca4e9a74c89be6ba358e76359d
+      internalID: 334156010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 250
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3da3242b7364f6fa8766e92288ccbe
+      internalID: 1289193814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 226
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8f206d99ac74aa8ab025860d56e5ed
+      internalID: -2044190796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 226
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdead6ee946014d16ad5d77ff84bfd84
+      internalID: 818632276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 234
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d55d6770c4c4222b951dca664ecfa2
+      internalID: -2006486095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 191
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dc21ac6b9394536ab677f932f491e6
+      internalID: -1605608760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 191
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583656098b8f14c9a970d50a7148998b
+      internalID: 11403300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 125
+        width: 63
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4039e498b1c4b43f8995a083a6afbc4f
+      internalID: -1086631723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 199
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f21950848b6448e2ae4c80486e50ce3
+      internalID: 1216733982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 214
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcaba1b0903324358a4e4980d0af7812
+      internalID: -1835661531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 207
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569571e7febcf4933a9bdd34d27cfcc8
+      internalID: 812043772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 214
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058abbd9b711c4504a24b453891ae004
+      internalID: -1757349417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 207
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54340ed73895240e3926ece00c5d8a14
+      internalID: -1703826891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 214
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db72af9882b3a44ca8e6b483ca146f3d
+      internalID: 1207233831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_45
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 207
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df376b7b504bc4cf1b172ccf9a2b1b49
+      internalID: 1264220752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_46
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 214
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4af18f554424d0da8c614ec5fb24c6
+      internalID: 1865928893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_47
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 199
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde9cd70eefa642789b5ca63b53839c7
+      internalID: -1810778623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_48
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 195
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68dab0acb8cc47ba83f0cb3419250c1
+      internalID: -945808687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_49
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 199
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1c5b0e18d8b4ca7922679a24201792
+      internalID: 460145412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_50
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 195
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0afe95a8c0d249fcb9797471298bb37
+      internalID: 158494554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_51
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 199
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f36cc28764c4ca3ba2974738483f3f
+      internalID: 1619658258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_52
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 164
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37df7f062ff4449499a825db21910c89
+      internalID: -255146486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_53
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 164
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c496833394b5448dca1b2ff3db9e83d9
+      internalID: -474873948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_54
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 164
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2601458d390a4205b66855600e930c7
+      internalID: -984741742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_55
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 171
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a757c90c121fa44e18ef09df40885422
+      internalID: 651279226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_56
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 128
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb8a67ca607642749add77ff8d42ae9
+      internalID: -320179930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_57
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 128
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8a0875a835042629bb2baa63509a2d
+      internalID: -1436259140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_58
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 144
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d68439262e349859a31e5f47fdcddb
+      internalID: 1617081559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_59
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 160
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0d31f3c97b24c848f3c9a5a6a5a904
+      internalID: 20780735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_60
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 156
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3c7091f1f8d4f89bbea16c13806f01
+      internalID: -1095204334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_61
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 156
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e808c4e45e4437e8c8efae7f5a9fe8
+      internalID: -919633900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_62
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 156
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c8a9ff928894d9c8e1c935bb2c417d
+      internalID: 967204908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_63
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 152
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13106a150ea4f47eb91381fe4fc45a76
+      internalID: -1603215858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_64
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 136
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2699d4620351f440988bdc5a87f10c80
+      internalID: -164198473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_65
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 136
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895711df7592e43c69c91186980426a6
+      internalID: -876018248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_66
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 144
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add51bff6cb0a49a9a6556079099831b
+      internalID: -1702676992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_67
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 132
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46cb9e80082c44efaf6c1b3cab4e8b6
+      internalID: 520736068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_68
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 136
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7aa95d611224904ad9fd5d435faef8
+      internalID: -45660150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_69
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 132
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7e0be5ff3f142caa68105a1a523e1b
+      internalID: 1456510334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_70
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 82
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329b8bafa39344502be8d7a6da1ab668
+      internalID: 152188738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_71
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 62
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb70a3f70bc1b41a2bc86a7a894479f2
+      internalID: 647262500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_72
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 82
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79d2d93de98f4180b157747449d39d1
+      internalID: 209641536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_73
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 62
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43738d84f88de42dbadccdfb37450a57
+      internalID: -1204236729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_74
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 82
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c3ed9bc837c461190dbff625a4c62d
+      internalID: 972634131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_75
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 62
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c9bfb957d354ef69c0751eef8ec209
+      internalID: -1964275320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_76
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 66
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a862c3b10bc554692aa954ee08a6279b
+      internalID: -1457584120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_77
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 66
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5b8896d7cbc4a268039f25f96abc78
+      internalID: -386040485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_78
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 27
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0f050d045f74d51bc96560a6bafcb7
+      internalID: 240645453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_79
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ef3afc774494c89bcc91d5c3a39987
+      internalID: -1822432518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_80
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 27
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b3cb0e6df444317b4e3e85ef49f765
+      internalID: -546479458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_81
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dfaf0de9e194d5eb6aede292944f62
+      internalID: 1845830306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_82
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 27
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0644a0a57a2bb42b2bf676621306f1b6
+      internalID: -1858754268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_83
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727cea1f9f7234d6baba022a2e52b840
+      internalID: -377532385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_84
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 7
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b3a2bfe8eb542a2ad2f1396921bdac
+      internalID: -98330278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: henrique-baldo-lixo-removebg-preview_85
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 7
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb707a6c2b784611ab64c74d9f31333
+      internalID: -619769491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      henrique-baldo-lixo-removebg-preview_0: -132150289
+      henrique-baldo-lixo-removebg-preview_1: -592857606
+      henrique-baldo-lixo-removebg-preview_10: 1212898406
+      henrique-baldo-lixo-removebg-preview_11: -1857673796
+      henrique-baldo-lixo-removebg-preview_12: -163965933
+      henrique-baldo-lixo-removebg-preview_13: 495260117
+      henrique-baldo-lixo-removebg-preview_14: 278622966
+      henrique-baldo-lixo-removebg-preview_15: -9389699
+      henrique-baldo-lixo-removebg-preview_16: 1582712483
+      henrique-baldo-lixo-removebg-preview_17: 1265105877
+      henrique-baldo-lixo-removebg-preview_18: -1644146376
+      henrique-baldo-lixo-removebg-preview_19: -1885577792
+      henrique-baldo-lixo-removebg-preview_2: 1708520266
+      henrique-baldo-lixo-removebg-preview_20: 403338498
+      henrique-baldo-lixo-removebg-preview_21: 1632895809
+      henrique-baldo-lixo-removebg-preview_22: 1361165404
+      henrique-baldo-lixo-removebg-preview_23: 2021778162
+      henrique-baldo-lixo-removebg-preview_24: -1427008999
+      henrique-baldo-lixo-removebg-preview_25: 982147587
+      henrique-baldo-lixo-removebg-preview_26: -2089467975
+      henrique-baldo-lixo-removebg-preview_27: 1550053189
+      henrique-baldo-lixo-removebg-preview_28: -1723641524
+      henrique-baldo-lixo-removebg-preview_29: 666145550
+      henrique-baldo-lixo-removebg-preview_3: -1069775900
+      henrique-baldo-lixo-removebg-preview_30: -895229888
+      henrique-baldo-lixo-removebg-preview_31: 334156010
+      henrique-baldo-lixo-removebg-preview_32: 1289193814
+      henrique-baldo-lixo-removebg-preview_33: -2044190796
+      henrique-baldo-lixo-removebg-preview_34: 818632276
+      henrique-baldo-lixo-removebg-preview_35: -2006486095
+      henrique-baldo-lixo-removebg-preview_36: -1605608760
+      henrique-baldo-lixo-removebg-preview_37: 11403300
+      henrique-baldo-lixo-removebg-preview_38: -1086631723
+      henrique-baldo-lixo-removebg-preview_39: 1216733982
+      henrique-baldo-lixo-removebg-preview_4: 194236460
+      henrique-baldo-lixo-removebg-preview_40: -1835661531
+      henrique-baldo-lixo-removebg-preview_41: 812043772
+      henrique-baldo-lixo-removebg-preview_42: -1757349417
+      henrique-baldo-lixo-removebg-preview_43: -1703826891
+      henrique-baldo-lixo-removebg-preview_44: 1207233831
+      henrique-baldo-lixo-removebg-preview_45: 1264220752
+      henrique-baldo-lixo-removebg-preview_46: 1865928893
+      henrique-baldo-lixo-removebg-preview_47: -1810778623
+      henrique-baldo-lixo-removebg-preview_48: -945808687
+      henrique-baldo-lixo-removebg-preview_49: 460145412
+      henrique-baldo-lixo-removebg-preview_5: -203539264
+      henrique-baldo-lixo-removebg-preview_50: 158494554
+      henrique-baldo-lixo-removebg-preview_51: 1619658258
+      henrique-baldo-lixo-removebg-preview_52: -255146486
+      henrique-baldo-lixo-removebg-preview_53: -474873948
+      henrique-baldo-lixo-removebg-preview_54: -984741742
+      henrique-baldo-lixo-removebg-preview_55: 651279226
+      henrique-baldo-lixo-removebg-preview_56: -320179930
+      henrique-baldo-lixo-removebg-preview_57: -1436259140
+      henrique-baldo-lixo-removebg-preview_58: 1617081559
+      henrique-baldo-lixo-removebg-preview_59: 20780735
+      henrique-baldo-lixo-removebg-preview_6: 41925773
+      henrique-baldo-lixo-removebg-preview_60: -1095204334
+      henrique-baldo-lixo-removebg-preview_61: -919633900
+      henrique-baldo-lixo-removebg-preview_62: 967204908
+      henrique-baldo-lixo-removebg-preview_63: -1603215858
+      henrique-baldo-lixo-removebg-preview_64: -164198473
+      henrique-baldo-lixo-removebg-preview_65: -876018248
+      henrique-baldo-lixo-removebg-preview_66: -1702676992
+      henrique-baldo-lixo-removebg-preview_67: 520736068
+      henrique-baldo-lixo-removebg-preview_68: -45660150
+      henrique-baldo-lixo-removebg-preview_69: 1456510334
+      henrique-baldo-lixo-removebg-preview_7: -1698752277
+      henrique-baldo-lixo-removebg-preview_70: 152188738
+      henrique-baldo-lixo-removebg-preview_71: 647262500
+      henrique-baldo-lixo-removebg-preview_72: 209641536
+      henrique-baldo-lixo-removebg-preview_73: -1204236729
+      henrique-baldo-lixo-removebg-preview_74: 972634131
+      henrique-baldo-lixo-removebg-preview_75: -1964275320
+      henrique-baldo-lixo-removebg-preview_76: -1457584120
+      henrique-baldo-lixo-removebg-preview_77: -386040485
+      henrique-baldo-lixo-removebg-preview_78: 240645453
+      henrique-baldo-lixo-removebg-preview_79: -1822432518
+      henrique-baldo-lixo-removebg-preview_8: 691335825
+      henrique-baldo-lixo-removebg-preview_80: -546479458
+      henrique-baldo-lixo-removebg-preview_81: 1845830306
+      henrique-baldo-lixo-removebg-preview_82: -1858754268
+      henrique-baldo-lixo-removebg-preview_83: -377532385
+      henrique-baldo-lixo-removebg-preview_84: -98330278
+      henrique-baldo-lixo-removebg-preview_85: -619769491
+      henrique-baldo-lixo-removebg-preview_9: 295025396
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

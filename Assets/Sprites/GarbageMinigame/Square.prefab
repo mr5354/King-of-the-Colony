@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6219475465446095925}
   - component: {fileID: 3715716460970134507}
   - component: {fileID: -8852187473989635659}
+  - component: {fileID: -3677544243704531181}
   m_Layer: 0
   m_Name: Square
   m_TagString: TrashSprite
@@ -28,11 +29,11 @@ Transform:
   m_GameObject: {fileID: 8865984596000736247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.0378, y: -3.7078, z: 0}
-  m_LocalScale: {x: 0.5444, y: 0.5444, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 2.7553272}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6219475465446095925
 SpriteRenderer:
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 22
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.8806343, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -143,3 +144,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e918629619759474fbba18aee0e998b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3677544243704531181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8865984596000736247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab123dbc59294db7a9e33847dc391ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 11403300, guid: 3d1bcd1f6e31749869bce2572727cf17, type: 3}
+  - {fileID: 1289193814, guid: 3d1bcd1f6e31749869bce2572727cf17, type: 3}
+  - {fileID: -1436259140, guid: 3d1bcd1f6e31749869bce2572727cf17, type: 3}
+  - {fileID: 647262500, guid: 3d1bcd1f6e31749869bce2572727cf17, type: 3}
+  - {fileID: -987543877, guid: dca1f7088fc624a82995c6976c9099fd, type: 3}
+  - {fileID: -1927324248, guid: dca1f7088fc624a82995c6976c9099fd, type: 3}
+  - {fileID: 69749130, guid: dca1f7088fc624a82995c6976c9099fd, type: 3}
+  - {fileID: -303450097, guid: dca1f7088fc624a82995c6976c9099fd, type: 3}
