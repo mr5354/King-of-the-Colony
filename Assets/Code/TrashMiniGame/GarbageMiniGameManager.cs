@@ -134,10 +134,7 @@ public class GarbageMiniGameManager : MonoBehaviour
 
     void OnDestroy()
     {
-        // Destroy all spawned squares
-        if (garbageSpawner != null)
-        {
-            garbageSpawner.DestroyAllSquares();
-        }
+        garbageSpawner.DestroyAllSquares();
+
     }
 }
