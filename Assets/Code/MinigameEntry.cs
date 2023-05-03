@@ -21,11 +21,13 @@ public class MinigameEntry : MonoBehaviour
     }
     
     void Update() {
-        distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-        if (active == true && distance <= showHighlightDistance) {
-            highlight.SetActive(true);
-        } else {
-            highlight.SetActive(false);
+        if (Camera.main != null) {
+            distance = Vector3.Distance(transform.position, Camera.main.transform.position);
+            if (active == true && distance <= showHighlightDistance) {
+                highlight.SetActive(true);
+            } else {
+                highlight.SetActive(false);
+            }
         }
     }
 
