@@ -597,6 +597,7 @@ MonoBehaviour:
   name: 4
   UIHighlight: {fileID: 49443302}
   Player: {fileID: 383932788}
+  gameManager: {fileID: 1847464955}
 --- !u!50 &172401135
 Rigidbody2D:
   serializedVersion: 4
@@ -2000,6 +2001,7 @@ MonoBehaviour:
   name: trash
   UIHighlight: {fileID: 1012982843}
   Player: {fileID: 383932788}
+  gameManager: {fileID: 1847464955}
 --- !u!50 &488182959
 Rigidbody2D:
   serializedVersion: 4
@@ -2962,6 +2964,7 @@ MonoBehaviour:
   name: 5
   UIHighlight: {fileID: 1165836624}
   Player: {fileID: 383932788}
+  gameManager: {fileID: 1847464955}
 --- !u!50 &735726265
 Rigidbody2D:
   serializedVersion: 4
@@ -6843,6 +6846,7 @@ MonoBehaviour:
   name: chew
   UIHighlight: {fileID: 330843430}
   Player: {fileID: 383932788}
+  gameManager: {fileID: 1847464955}
 --- !u!50 &814924123
 Rigidbody2D:
   serializedVersion: 4
@@ -10980,6 +10984,7 @@ MonoBehaviour:
   name: info
   UIHighlight: {fileID: 93981908}
   Player: {fileID: 383932788}
+  gameManager: {fileID: 1847464955}
 --- !u!50 &1359316891
 Rigidbody2D:
   serializedVersion: 4

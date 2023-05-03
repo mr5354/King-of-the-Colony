@@ -67,7 +67,6 @@ public class GarbageMiniGameManager : MonoBehaviour
     public void IncrementScore(int amount)
     {
         // Debug when called
-        Debug.Log($"Incrementing score by {amount}");
         score += amount;
     }
 
@@ -119,7 +118,6 @@ public class GarbageMiniGameManager : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(additiveSceneName))
         {
-            Debug.Log($"Unloading scene {additiveSceneName}");
             // Unload the current additive scene
             SceneManager.UnloadSceneAsync(additiveSceneName);
             additiveSceneName = null;
