@@ -34,8 +34,6 @@ public class MinigameEntry : MonoBehaviour
     // when the player is within 80 units of the minigame entry and the object is clicked, the minigame will start
     public void OnMouseDown()
     {
-        Debug.Log("Distance is: " + distance);
-        Debug.Log("Interaction Distance is: " + interactionDistance);
         if (active == true && distance <= interactionDistance)
         {
             // Use the GameManager reference to load the minigame scene

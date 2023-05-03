@@ -99,13 +99,11 @@ public class GameManager : MonoBehaviour
             if (minigameArray[i]) {
                 // activate minigame
                 minigames[i].activate(true);
-                Debug.Log("Minigame activated: " + minigames[i].getName());
                 count++;
             } else {
                 minigames[i].activate(false);
             }
         }
-        Debug.Log("# of minigame activated: " + count);
         // if no minigames are activated, activate at least one
         if (count == 0) {
             int minigameToActivate = Random.Range(0, 5);
@@ -124,7 +122,6 @@ public class GameManager : MonoBehaviour
     public void UpdateHappiness(int val)
     {
         // Debug log when this is called
-        Debug.Log("UpdateHappiness called with value: " + val);
         happiness -= val;
         // Clamp the happiness value to ensure it doesn't go below 0
         happiness = Mathf.Max(0, happiness);
