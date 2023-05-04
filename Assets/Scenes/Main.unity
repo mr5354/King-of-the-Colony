@@ -1994,7 +1994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7839513d3840c41bf9c867e6d1fc8f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 10.07
+  interactionDistance: 10.09
   sceneToLoad: GarbageMiniGame
   highlight: {fileID: 171521989}
   active: 0
@@ -10978,7 +10978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7839513d3840c41bf9c867e6d1fc8f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 10.14
+  interactionDistance: 10.16
   sceneToLoad: FakeInfoMiniGame
   highlight: {fileID: 1169572174}
   active: 0
@@ -11328,7 +11328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.66, y: -3.83}
+  m_AnchoredPosition: {x: 10.71, y: -3.83}
   m_SizeDelta: {x: 0.98, y: 0.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1502616464
