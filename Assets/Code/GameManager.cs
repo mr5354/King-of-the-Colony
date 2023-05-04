@@ -51,18 +51,18 @@ public class GameManager : MonoBehaviour
     {
         // ==============Debug helpers==============
 
-        // LoadMinigameWithDebugKeys();
-        // if (Input.GetKeyDown(KeyCode.Escape))
-        // {
-        //     // Unload the current minigame scene if one is loaded
-        //     UnloadCurrentMinigame();
-        // }
+        LoadMinigameWithDebugKeys();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            // Unload the current minigame scene if one is loaded
+            UnloadCurrentMinigame();
+        }
 
-        // if (Input.GetKeyDown(KeyCode.P))
-        // {
-        //     // Decrement happiness by 5
-        //     UpdateHappiness(5);
-        // }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            // Decrement happiness by 5
+            UpdateHappiness(5);
+        }
 
         // ==============Debug helpers end==============
 
