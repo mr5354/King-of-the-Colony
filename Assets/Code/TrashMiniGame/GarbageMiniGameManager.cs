@@ -93,7 +93,7 @@ public class GarbageMiniGameManager : MonoBehaviour
     {
         gameEnded = true;
         finalScoreText.gameObject.SetActive(true);
-        finalScoreText.text = $"You scored {score}! Congratulations!";
+        finalScoreText.text = $"You picked up {score} pieces of trash! Good job!";
 
         // Stop spawning squares and destroy all spawned squares
         if (garbageSpawner != null)
