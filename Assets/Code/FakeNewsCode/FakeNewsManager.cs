@@ -34,7 +34,7 @@ public class FakeNewsManager : MonoBehaviour
     public GameObject FinalCanvas;
     public TextMeshProUGUI finalScoreText;
     private GameManager gameManager;
-    private bool isGameOver = false;
+    // private bool isGameOver = false;
 
     // Start is called before the first frame update
     void Start()
@@ -78,10 +78,16 @@ public class FakeNewsManager : MonoBehaviour
                 {
                     // get the game object
                     GameObject obj = collider.gameObject;
+                    // Print the name of the game object
+                    Debug.Log("Clicked on " + obj.name);
                     // if the object is a choice object
                     if (obj == choice1 || obj == choice2 || obj == choice3)
                     {
-                        if (isCorrect(obj))
+                        Debug.Log("Clicked on a choice object");
+                        bool res = isCorrect(obj);
+                        Debug.Log(res);
+                        if (res)
+                        // if (bool res = isCorrect(obj))
                         {
                             answers.RemoveAt(currSetIdx);
                             // increment score
@@ -98,17 +104,17 @@ public class FakeNewsManager : MonoBehaviour
                 }
             }
         }
-        else if (!isGameOver)
+        else
         {
             // end of game
             EndGame();
-            isGameOver = true;
-        }
-        else if (Input.anyKeyDown || Input.GetMouseButtonDown(0))
-        {
-            // Unload the scene after a mouse click or key press
-            UnloadCurrentScene();
-            gameManager.UpdateHappiness(score * scoreMultiplier);
+            // isGameOver = true;
+            if (Input.anyKeyDown || Input.GetMouseButtonDown(0))
+                {
+                    // Unload the scene after a mouse click or key press
+                    UnloadCurrentScene();
+                    gameManager.UpdateHappiness(score * scoreMultiplier);
+                }
         }
     }
 
@@ -147,7 +153,8 @@ public class FakeNewsManager : MonoBehaviour
         // Add any additional end-of-game functionality here
         FinalCanvas.SetActive(true);
         // Set the final score text 
-        finalScoreText.text = "Final Score: " + score * scoreMultiplier;
+        finalScoreText.text = "You were able to spread " + score + " fake news! \n Your score was: " + score * scoreMultiplier;
+
     }
 
     // function to handle end of game

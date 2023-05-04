@@ -8,14 +8,17 @@ public class FollowMouse : MonoBehaviour
     private Vector3 mousePosition;
     private GameObject clickedObject; // the sprite currently being clicked
 
+    public float xOffset = 0f; // x offset
+    public float yOffset = 0f; // y offset
+
     void Update()
     {
         // get the mouse position in world coordinates
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0f; // make sure the Z coordinate is 0
 
-        // update the game object's position to match the mouse position
-        transform.position = mousePosition;
+        // update the game object's position to match the mouse position with offsets
+        transform.position = new Vector3(mousePosition.x + xOffset, mousePosition.y + yOffset, mousePosition.z);
 
         // check if clickedObject has been destroyed
         if (clickedObject != null && clickedObject.GetComponent<TrashFollow>() == null)
@@ -47,7 +50,6 @@ public class FollowMouse : MonoBehaviour
             }
         }
     }
-
 }
 
 
