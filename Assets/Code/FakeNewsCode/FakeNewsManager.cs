@@ -34,7 +34,6 @@ public class FakeNewsManager : MonoBehaviour
     public GameObject FinalCanvas;
     public TextMeshProUGUI finalScoreText;
     private GameManager gameManager;
-    // private bool isGameOver = false;
 
     // Start is called before the first frame update
     void Start()
@@ -47,9 +46,9 @@ public class FakeNewsManager : MonoBehaviour
         // init questions
         questions = new List<string[]>
         {
-            new string[] {"q1", "q2", "q3"},
-            new string[] {"q4", "q5", "q6"},
-            new string[] {"q7", "q8", "q9"}
+            new string[] {"Sanitation workers are coming to cleaning these areas... Be aware!", "Be aware of toxic gases in the following areas...", "Human love rats!"},
+            new string[] {"Don't go to these houses, they got cats in 'em.", "We can survive a fall from a great height without injury. Time to go bungee jumping!", "Go to this restaurant, they have the best waste food!"},
+            new string[] {"Cheese is safe to eat in the kitchen.", "There will be less time for us to dig through dumpsters now since the trash setout rule is changing.", "There are bait stations on the streets. Be careful"}
         };
         // init answers
         answers = new List<bool[]>
@@ -78,33 +77,18 @@ public class FakeNewsManager : MonoBehaviour
                 {
                     // get the game object
                     GameObject obj = collider.gameObject;
-                    // Print the name of the game object
-                    Debug.Log("====================================");
-                    Debug.Log("Current round is: " + currRound);
-                    Debug.Log("CurrSetIdx is: " + currSetIdx);
-                    Debug.Log("Currently in questions: " + string.Join(", ", questions));
-                    Debug.Log("Currently in answers: " + string.Join(", ", answers));
-                    Debug.Log("Clicked on " + obj.name);
-                    // if the object is a choice object
-                    Debug.Log("Am I choice 1: " + (obj == choice1));
-                    Debug.Log("Am I choice 2: " + (obj == choice2));
-                    Debug.Log("Am I choice 3: " + (obj == choice3));
                     if (obj == choice1 || obj == choice2 || obj == choice3)
                     {
-                        Debug.Log("Clicked on a choice object");
-                        bool res = isCorrect(obj);
-                        Debug.Log("The answer was: " + res);
-                        Debug.Log("====================================");
-                        questions.RemoveAt(currSetIdx);
-                        answers.RemoveAt(currSetIdx);
-                        if (res)
-                        // if (bool res = isCorrect(obj))
+                        if (isCorrect(obj))
                         {
                             // increment score
                             score++;
                             // update score text
                             scoreText.text = "Score: " + score * scoreMultiplier;
                         }
+
+                        questions.RemoveAt(currSetIdx);
+                        answers.RemoveAt(currSetIdx);
                         currRound++;
                         // select another set of questions
                         if (currRound != totalRounds) {
@@ -118,7 +102,6 @@ public class FakeNewsManager : MonoBehaviour
         {
             // end of game
             EndGame();
-            // isGameOver = true;
             if (Input.anyKeyDown || Input.GetMouseButtonDown(0))
                 {
                     // Unload the scene after a mouse click or key press
@@ -141,9 +124,6 @@ public class FakeNewsManager : MonoBehaviour
             string question = currSet[i];
             choiceTextArray[i].text = question;
         }
-
-        // remove the selected set from the questions and answers lists
-        // questions.RemoveAt(currSetIdx);
     }
 
     private bool isCorrect(GameObject obj) {
