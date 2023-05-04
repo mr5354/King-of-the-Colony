@@ -79,17 +79,27 @@ public class FakeNewsManager : MonoBehaviour
                     // get the game object
                     GameObject obj = collider.gameObject;
                     // Print the name of the game object
+                    Debug.Log("====================================");
+                    Debug.Log("Current round is: " + currRound);
+                    Debug.Log("CurrSetIdx is: " + currSetIdx);
+                    Debug.Log("Currently in questions: " + string.Join(", ", questions));
+                    Debug.Log("Currently in answers: " + string.Join(", ", answers));
                     Debug.Log("Clicked on " + obj.name);
                     // if the object is a choice object
+                    Debug.Log("Am I choice 1: " + (obj == choice1));
+                    Debug.Log("Am I choice 2: " + (obj == choice2));
+                    Debug.Log("Am I choice 3: " + (obj == choice3));
                     if (obj == choice1 || obj == choice2 || obj == choice3)
                     {
                         Debug.Log("Clicked on a choice object");
                         bool res = isCorrect(obj);
-                        Debug.Log(res);
+                        Debug.Log("The answer was: " + res);
+                        Debug.Log("====================================");
+                        questions.RemoveAt(currSetIdx);
+                        answers.RemoveAt(currSetIdx);
                         if (res)
                         // if (bool res = isCorrect(obj))
                         {
-                            answers.RemoveAt(currSetIdx);
                             // increment score
                             score++;
                             // update score text
@@ -133,10 +143,12 @@ public class FakeNewsManager : MonoBehaviour
         }
 
         // remove the selected set from the questions and answers lists
-        questions.RemoveAt(currSetIdx);
+        // questions.RemoveAt(currSetIdx);
     }
 
     private bool isCorrect(GameObject obj) {
+        Debug.Log("Current round is: " + currRound);
+        Debug.Log("isCorrect is called");
         if (obj == choice1) {
             return answers[currSetIdx][0];
         } else if (obj == choice2) {
