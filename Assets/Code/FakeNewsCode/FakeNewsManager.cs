@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class FakeNewsManager : MonoBehaviour
 {
@@ -29,9 +30,18 @@ public class FakeNewsManager : MonoBehaviour
     private int score = 0;
     private int scoreMultiplier = 1;
 
+    public string additiveSceneName;
+    public GameObject FinalCanvas;
+    public TextMeshProUGUI finalScoreText;
+    private GameManager gameManager;
+    private bool isGameOver = false;
+
     // Start is called before the first frame update
     void Start()
     {
+        // Hide the FinalCanvas
+        FinalCanvas.SetActive(false);
+        gameManager = FindObjectOfType<GameManager>();
         // choice text array
         choiceTextArray = new TextMeshProUGUI[] {choiceText1, choiceText2, choiceText3};
         // init questions
@@ -78,26 +88,35 @@ public class FakeNewsManager : MonoBehaviour
                             score++;
                             // update score text
                             scoreText.text = "Score: " + score * scoreMultiplier;
-                            currRound++;
                         }
+                        currRound++;
                         // select another set of questions
-                        SelectQuestions();
+                        if (currRound != totalRounds) {
+                            SelectQuestions();
+                        }
                     }
                 }
             }
         }
-        else
+        else if (!isGameOver)
         {
             // end of game
+            EndGame();
+            isGameOver = true;
         }
-        
+        else if (Input.anyKeyDown || Input.GetMouseButtonDown(0))
+        {
+            // Unload the scene after a mouse click or key press
+            UnloadCurrentScene();
+            gameManager.UpdateHappiness(score * scoreMultiplier);
+        }
     }
 
     // randomly select another set of questions
     private void SelectQuestions()
     {
         // randomly select 3 questions
-        currSetIdx = Random.Range(0, questions.Count);
+        currSetIdx = Random.Range(0, questions.Count - 1);
         string[] currSet = questions[currSetIdx];
         // set the text of the choices
         for (int i = 0; i < currSet.Length; i++)
@@ -123,8 +142,29 @@ public class FakeNewsManager : MonoBehaviour
         }
     }
 
-    // function to handle end of round
+    private void EndGame()
+    {
+        // Add any additional end-of-game functionality here
+        FinalCanvas.SetActive(true);
+        // Set the final score text 
+        finalScoreText.text = "Final Score: " + score * scoreMultiplier;
+    }
 
     // function to handle end of game
+    private void UnloadCurrentScene()
+    {
+        if (!string.IsNullOrEmpty(additiveSceneName))
+        {
+            // Unload the current additive scene
+            SceneManager.UnloadSceneAsync(additiveSceneName);
+            additiveSceneName = null;
+
+            // Call the ReactivatePlayerAndUI function from the GameManager script
+            if (gameManager != null)
+            {
+                gameManager.ReactivatePlayerAndUI();
+            }
+        }
+    }
 
 }
