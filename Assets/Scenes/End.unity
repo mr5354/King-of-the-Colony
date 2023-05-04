@@ -306,9 +306,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143178729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 3.69, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.04, y: 3.16, z: 0}
+  m_LocalScale: {x: 14.36, y: 14.36, z: 2.0514286}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -416,8 +416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 126}
-  m_SizeDelta: {x: 625.3, y: 56.76}
+  m_AnchoredPosition: {x: -1, y: 61.3}
+  m_SizeDelta: {x: 485.46, y: 56.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &666644285
 MonoBehaviour:
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'The remaining hapiness of the rats colony is: 100'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc15d5d33fa2960479d03f2ff27d5994, type: 2}
   m_sharedMaterial: {fileID: 4154807839586527336, guid: bc15d5d33fa2960479d03f2ff27d5994, type: 2}
@@ -466,8 +466,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -543,7 +543,7 @@ RectTransform:
   m_GameObject: {fileID: 819489479}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.481074, y: 1.481074, z: 1.481074}
+  m_LocalScale: {x: 1.50329, y: 1.481074, z: 1.481074}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1301607754}
@@ -551,8 +551,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -29}
-  m_SizeDelta: {x: 693.8, y: 46.5}
+  m_AnchoredPosition: {x: -1.16, y: -55.9}
+  m_SizeDelta: {x: 516.94, y: 89.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &819489481
 MonoBehaviour:
@@ -574,7 +574,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Alas, dear player, your dastardly schemes have been foiled! The rats, those
+    cunning whiskered masterminds, have outwitted you at every turn. Despite your
+    best efforts to sabotage their colony, they've emerged triumphant, tails held
+    high. You've lost the game, but take heart, for in the epic battle of human versus
+    rodent, there's always a next time for sneaky shenanigans!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc15d5d33fa2960479d03f2ff27d5994, type: 2}
   m_sharedMaterial: {fileID: 4154807839586527336, guid: bc15d5d33fa2960479d03f2ff27d5994, type: 2}
@@ -601,8 +605,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -686,7 +690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 320, y: 256}
+  m_AnchoredPosition: {x: 243.3, y: 204.2}
   m_SizeDelta: {x: 272.3, y: 56.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890282346
@@ -709,7 +713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Lowest happiness was: 50'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc15d5d33fa2960479d03f2ff27d5994, type: 2}
   m_sharedMaterial: {fileID: 4154807839586527336, guid: bc15d5d33fa2960479d03f2ff27d5994, type: 2}
@@ -736,8 +740,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -858,7 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1076,8 +1080,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1164,8 +1168,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -226}
-  m_SizeDelta: {x: 160, y: 32.7}
+  m_AnchoredPosition: {x: -9.46, y: -174.2}
+  m_SizeDelta: {x: 102.85, y: 28.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1490244395
 MonoBehaviour:
