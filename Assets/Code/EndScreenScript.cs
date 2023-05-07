@@ -28,7 +28,7 @@ public class EndScreenScript : MonoBehaviour
                 bestScore = gameManager.getHappiness();
             }
             bestScoreTextObj.text = "Lowest happiness was: " + bestScore;
-            scoreTextObj.text = "The remaining hapiness of the rats colony is: " + currScore;
+            scoreTextObj.text = "The remaining happiness of the rats colony is: " + currScore;
             // if the happiness is above 80, the player lose
             if (currScore > 80)
             {
@@ -44,7 +44,7 @@ public class EndScreenScript : MonoBehaviour
                 endingParagraphObj.text = "Well, that was... uneventful. You dabbled in the art of sabotage, but the rat colony remains mostly unfazed. They're neither triumphant nor defeated, just carrying on with their ratty business. Perhaps next time, you'll tip the scales one way or the other.";
             }
         } else {
-            scoreTextObj.text = "The remaining hapiness of the rats colony is: 100";
+            scoreTextObj.text = "The remaining happiness of the rats colony is: 100";
             bestScoreTextObj.text = "Lowest happiness was: 50";
             endingParagraphObj.text = "Alas, dear player, your dastardly schemes have been foiled! The rats, those cunning whiskered masterminds, have outwitted you at every turn. Despite your best efforts to sabotage their colony, they've emerged triumphant, tails held high. You've lost the game, but take heart, for in the epic battle of human versus rodent, there's always a next time for sneaky shenanigans!";
         }
