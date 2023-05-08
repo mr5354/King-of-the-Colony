@@ -18,7 +18,7 @@ public class PoisonGameManager : MonoBehaviour
     private GameManager gameManager;
     public string additiveSceneName;
 
-    private bool isSpawning = true;
+    //private bool isSpawning = true;
     // Start is called before the first frame update
     void Start()
     {

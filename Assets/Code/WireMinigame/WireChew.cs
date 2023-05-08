@@ -8,6 +8,7 @@ public class WireChew : MonoBehaviour
     private GameObject ChewEffect;
 
     public void OnMouseDown() {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        Debug.Log("hidden");
     }
 }
