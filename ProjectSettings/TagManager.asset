@@ -8,6 +8,8 @@ TagManager:
   - Interactable
   - TrashSprite
   - Trap
+  - Cheese
+  - Bullet
   layers:
   - Default
   - TransparentFX

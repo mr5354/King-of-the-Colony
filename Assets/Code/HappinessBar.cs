@@ -8,7 +8,7 @@ public class HappinessBar : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image fill;
-
+    
     public void SetMaxHappiness(int happiness)
     {
         slider.maxValue = happiness;
@@ -21,5 +21,16 @@ public class HappinessBar : MonoBehaviour
     {
         slider.value = happiness;
         fill.color = gradient.Evaluate(slider.normalizedValue);
+    }
+
+    int interval = 1; 
+    float nextTime = 0;
+     
+    // Slowly increased colony hapiness over time
+    void Update () {
+        if (Time.time >= nextTime) {
+            slider.value += 0.2f;
+            nextTime += interval; 
+        }
     }
 }

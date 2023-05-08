@@ -69,6 +69,7 @@ public class GameManager : MonoBehaviour
 
         if (happiness == 0) {
             TimerOn = false;
+            UnloadCurrentMinigame();
             SceneManager.LoadScene(sceneToLoad);
             activated = false;
         }
@@ -178,7 +179,7 @@ public class GameManager : MonoBehaviour
             // GameObject.Find("Canvas").SetActive(false);
             canvas.SetActive(false);
             // Pause the timer in the game manager (if needed)
-            TimerOn = false;
+            //TimerOn = false;
         }
     }
     
