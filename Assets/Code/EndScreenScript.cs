@@ -23,11 +23,12 @@ public class EndScreenScript : MonoBehaviour
         if (gameManager != null)
         {
             currScore = gameManager.getHappiness();
-            if (currScore < bestScore)
+            int savedBestScore = PlayerPrefs.GetInt("bestScore", 999);
+            if (currScore < savedBestScore || savedBestScore == 999)
             {
-                bestScore = gameManager.getHappiness();
+                PlayerPrefs.SetInt("bestScore", currScore);
             }
-            bestScoreTextObj.text = "Lowest happiness was: " + bestScore;
+            bestScoreTextObj.text = "Lowest happiness was: " + PlayerPrefs.GetInt("bestScore");
             scoreTextObj.text = "The remaining happiness of the rats colony is: " + currScore;
             // if the happiness is above 80, the player lose
             if (currScore > 80)
@@ -50,9 +51,4 @@ public class EndScreenScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

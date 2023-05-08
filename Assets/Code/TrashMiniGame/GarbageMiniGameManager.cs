@@ -103,10 +103,10 @@ public class GarbageMiniGameManager : MonoBehaviour
         }
 
         // Calculate happiness change based on score and multiplier
-        int happinessChange = score * happinessMultiplier;
+        int happinessChange = (score * happinessMultiplier) - 5;
 
         // Update happiness in the GameManager
-        if (gameManager != null)
+        if (gameManager != null )
         {
             gameManager.UpdateHappiness(happinessChange);
         }

@@ -52,18 +52,18 @@ public class GameManager : MonoBehaviour
     {
         // ==============Debug helpers==============
 
-        LoadMinigameWithDebugKeys();
+        //LoadMinigameWithDebugKeys();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             // Unload the current minigame scene if one is loaded
             UnloadCurrentMinigame();
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            // Decrement happiness by 5
-            UpdateHappiness(5);
-        }
+        // if (Input.GetKeyDown(KeyCode.P))
+        // {
+        //     // Decrement happiness by 5
+        //     UpdateHappiness(5);
+        // }
 
         // ==============Debug helpers end==============
 
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
                 activated = false;
             }
         }
-        if(Input.GetMouseButtonDown(0)){
+        if(Input.GetMouseButtonDown(0) && TimerOn){
             click.Play();
         }
     }
@@ -141,7 +141,9 @@ public class GameManager : MonoBehaviour
     public void UpdateHappiness(int val)
     {
         // Debug log when this is called
-        happiness -= val;
+        if (val >= 0 ){
+            happiness -= val;
+        }
         // Clamp the happiness value to ensure it doesn't go below 0
         happiness = Mathf.Max(0, happiness);
         // Update the health bar to reflect the new happiness value
