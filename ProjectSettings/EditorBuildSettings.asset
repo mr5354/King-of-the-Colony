@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Narrative.unity
     guid: b563f3551ad328a4791bb6d59c573fa2
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 2eb0ca963e0478b4f9042dc8043cfc70
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -24,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/BlockSewers.unity
     guid: a2b6143a9cc4842dca17306a866d64d0
   - enabled: 1
-    path: Assets/Scenes/MiniGame_5.unity
+    path: Assets/Scenes/PoisonCheese.unity
     guid: 9830e62ecca514290a85fc91e6a72204
   - enabled: 1
     path: Assets/Scenes/End.unity
