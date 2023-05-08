@@ -30,6 +30,7 @@ public class WireMiniGameManager : MonoBehaviour
     {
         finalTextPanel.SetActive(false);
         ShuffleWires();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     private void Update()

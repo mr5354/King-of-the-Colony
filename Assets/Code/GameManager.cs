@@ -67,18 +67,18 @@ public class GameManager : MonoBehaviour
 
         // ==============Debug helpers end==============
 
-        if (happiness == 0) {
-            TimerOn = false;
-            UnloadCurrentMinigame();
-            SceneManager.LoadScene(sceneToLoad);
-            activated = false;
-        }
+        // if (happiness == 0) {
+        //     TimerOn = false;
+        //     UnloadCurrentMinigame();
+        //     SceneManager.LoadScene(sceneToLoad);
+        //     activated = false;
+        // }
 
         if (TimerOn)
         {
             countdownTime -= Time.deltaTime;
             timerText.text = FormatTime(countdownTime);
-            if (countdownTime <= 0f)
+            if (countdownTime <= 0f || happiness <= 0)
             {
                 TimerOn = false;
                 SceneManager.LoadScene(sceneToLoad);
