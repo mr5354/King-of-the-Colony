@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 {
     private int happiness = 100;
     private HappinessBar bar;
-    // private float countdownTime = 20f + 1f; // 20second - for debugging
+    // private float countdownTime = 10f + 1f; // 20second - for debugging
     private float countdownTime = 5f * 60f + 1f; // 5 minutes in seconds
     private bool TimerOn = false;
     public TextMeshProUGUI timerText;
