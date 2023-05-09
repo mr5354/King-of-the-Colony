@@ -10,7 +10,7 @@ public class FakeNewsManager : MonoBehaviour
     private List<string[]> questions;
     private List<bool[]> answers;
     // num of rounds
-    private int totalRounds = 3;
+    private int totalRounds = 10;
     private int currRound = 0;
 
     // question set
@@ -48,14 +48,30 @@ public class FakeNewsManager : MonoBehaviour
         {
             new string[] {"Sanitation workers are coming to cleaning these areas... Be aware!", "Be aware of toxic gases in the following areas...", "Human love rats!"},
             new string[] {"Don't go to these houses, they got cats in 'em.", "We can survive a fall from a great height without injury. Time to go bungee jumping!", "Go to this restaurant, they have the best waste food!"},
-            new string[] {"Cheese is safe to eat in the kitchen.", "There will be less time for us to dig through dumpsters now since the trash setout rule is changing.", "There are bait stations on the streets. Be careful"}
+            new string[] {"Cheese is safe to eat in the kitchen.", "There will be less time for us to dig through dumpsters now since the trash setout rule is changing.", "There are bait stations on the streets. Be careful"},
+            new string[] {"Rats can hold their breath for over an hour under water! You can hide from humans like that.", "There's a new rat poison in the neighborhood, be careful!", "The sewer system is a safe place to hide."},
+            new string[] {"Rats can survive without water for more than a few days.", "The humans are planning a rat extermination in the area.", "Rats can eat anything without getting sick."},
+            new string[] {"Rats have excellent eyesight, so we don't rely on our other senses.", "The humans have left out food for us, it's a feast!", "Rats have an incredible sense of smell. We can use it to avoid traps."},
+            new string[] {"Rats can breed slowly, with females able to have only one litter a year.", "The humans have left out traps, watch your step!", "Rats are solitary creatures and prefer to live alone."},
+            new string[] {"Rats are diurnal, so it's safer to go out during the night.", "The humans are moving out, so there will be less food.", "Be careful of the humans' pet cats."},
+            new string[] {"Rats can't squeeze through holes as small as a quarter.", "The humans have a new pet snake, be careful!", "Rats can't survive in cold weather."},
+            new string[] {"Rats can't climb vertical surfaces.", "The humans are using ultrasonic devices to drive us away.", "Rats can't remember their way back home."}
+
         };
         // init answers
         answers = new List<bool[]>
         {
             new bool[] {false, false, true},
             new bool[] {false, true, false},
+            new bool[] {true, false, false},
+            new bool[] {true, false, false},
+            new bool[] {true, false, false},
+            new bool[] {true, false, false},
+            new bool[] {true, false, false},
+            new bool[] {true, false, false},
+            new bool[] {true, false, false},
             new bool[] {true, false, false}
+
         };
         SelectQuestions();
     }
@@ -145,7 +161,7 @@ public class FakeNewsManager : MonoBehaviour
         // Add any additional end-of-game functionality here
         FinalCanvas.SetActive(true);
         // Set the final score text 
-        finalScoreText.text = "You were able to spread " + score + " fake news! \n Your score was: " + score * scoreMultiplier;
+        finalScoreText.text = "You were able to spread " + score + "/10 fake news! \n Your score was: " + score * scoreMultiplier;
 
     }
 

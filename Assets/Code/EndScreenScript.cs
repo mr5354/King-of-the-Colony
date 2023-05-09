@@ -28,8 +28,8 @@ public class EndScreenScript : MonoBehaviour
             {
                 PlayerPrefs.SetInt("bestScore", currScore);
             }
-            bestScoreTextObj.text = "Lowest happiness was: " + PlayerPrefs.GetInt("bestScore");
-            scoreTextObj.text = "The remaining happiness of the rats colony is: " + currScore;
+            bestScoreTextObj.text = "Best score was: " + (100 - PlayerPrefs.GetInt("bestScore"));
+            scoreTextObj.text = "You scored: " + (100 - currScore);
             // if the happiness is above 80, the player lose
             if (currScore > 80)
             {
