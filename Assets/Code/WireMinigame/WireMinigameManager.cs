@@ -72,10 +72,7 @@ public class WireMiniGameManager : MonoBehaviour
         }
         else
         {
-            wirePanel.SetActive(false);
-            gameText.SetActive(false);
-            finalText.text = "You Scored: " + score.ToString();
-            finalTextPanel.SetActive(true);
+            EndGame();
             // Check for any key event or click event to unload the current additive scene
             if (Input.anyKeyDown || Input.GetMouseButtonDown(0))
             {
