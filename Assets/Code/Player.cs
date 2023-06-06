@@ -30,8 +30,6 @@ public class Player : MonoBehaviour
         anim.SetFloat("Horizontal" , movement.x);
         anim.SetFloat("Vertical" , movement.y);
         anim.SetFloat("Speed", movement.sqrMagnitude);
-
-        HappinessBarController();
     }
 
     void FixedUpdate()
@@ -39,12 +37,12 @@ public class Player : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    public void HappinessBarController()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            currentHappiness += 10;
-            bar.SetHappiness(currentHappiness);        
-        }
-    }
+    // public void HappinessBarController()
+    // {
+    //     if(Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //         currentHappiness += 10;
+    //         bar.SetHappiness(currentHappiness);        
+    //     }
+    // }
 }

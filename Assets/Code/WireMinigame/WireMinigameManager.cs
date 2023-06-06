@@ -26,6 +26,8 @@ public class WireMiniGameManager : MonoBehaviour
     public TextMeshProUGUI roundText;
     public TextMeshProUGUI finalText;
 
+    private bool gameEnded = false;
+
     private void Start()
     {
         finalTextPanel.SetActive(false);
@@ -35,7 +37,7 @@ public class WireMiniGameManager : MonoBehaviour
 
     private void Update()
     {
-        if (currRound < maxRound)
+        if (currRound < maxRound && !gameEnded)
         {
             foreach(GameObject obj in wires) {
                 if(!obj.activeSelf) {
@@ -69,10 +71,12 @@ public class WireMiniGameManager : MonoBehaviour
                 
                 wire = null;
             }
+            if(currRound >= maxRound){
+                EndGame();
+            }
         }
         else
         {
-            EndGame();
             // Check for any key event or click event to unload the current additive scene
             if (Input.anyKeyDown || Input.GetMouseButtonDown(0))
             {
@@ -132,6 +136,8 @@ public class WireMiniGameManager : MonoBehaviour
     }
     private void EndGame()
     {
+        gameEnded = true;
+
         wirePanel.SetActive(false);
         gameText.SetActive(false);
         finalText.text = "You Scored: " + score.ToString();
